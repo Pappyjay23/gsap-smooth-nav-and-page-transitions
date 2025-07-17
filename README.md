@@ -22,7 +22,7 @@ This is a personal practice project, created to experiment with animation techni
 
 ## 🔗 Live Demo
 
-Coming soon...
+[Click here...](https://smooth-page-transitions-vp.netlify.app)
 
 ## 📌 Notes
 
