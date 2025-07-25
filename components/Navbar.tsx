@@ -56,7 +56,7 @@ const Navbar = () => {
 	useGSAP(() => {
 		const navLinks = document.getElementsByClassName("nav-link");
 		const menuOverlayLinks = document.querySelectorAll(
-			".nav .menu-overlay .menu-overlay-link"
+			".menu-overlay .menu-overlay-link"
 		);
 
 		gsap.fromTo(
@@ -73,7 +73,7 @@ const Navbar = () => {
 			}
 		);
 
-		gsap.set(".nav .menu-overlay", {
+		gsap.set(".menu-overlay", {
 			y: "-100%",
 		});
 
@@ -83,7 +83,7 @@ const Navbar = () => {
 
 		tl.current = gsap
 			.timeline({ paused: true })
-			.to(".nav .menu-overlay", {
+			.to(".menu-overlay", {
 				y: 0,
 				duration: 1, // shorter duration for faster start
 				ease: "power4.inOut",
@@ -115,8 +115,8 @@ const Navbar = () => {
 	}, [showMenu]);
 
 	return (
-		<div className='nav'>
-			<nav className='relative top-0 left-0 w-full flex items-center justify-between p-4 text-white text-sm [clip-path:polygon(0%_0%,0%_100%,100%_100%,100%_0%)]'>
+		<>
+			<nav className='sticky top-0 left-0 w-full flex items-center justify-between p-4 text-black dark:text-white text-sm z-10 backdrop-blur-lg [clip-path:polygon(0%_0%,0%_100%,100%_100%,100%_0%)]'>
 				<Link
 					className='nav-link'
 					href='/'
@@ -215,7 +215,7 @@ const Navbar = () => {
 					</div>
 				</nav>
 			</div>
-		</div>
+		</>
 	);
 };
 
