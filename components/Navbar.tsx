@@ -74,7 +74,7 @@ const Navbar = () => {
 		);
 
 		gsap.set(".menu-overlay", {
-			y: "-100%",
+			y: "-150%",
 		});
 
 		gsap.set(menuOverlayLinks, {
@@ -85,7 +85,7 @@ const Navbar = () => {
 			.timeline({ paused: true })
 			.to(".menu-overlay", {
 				y: 0,
-				duration: 1, // shorter duration for faster start
+				duration: 2, // shorter duration for faster start
 				ease: "power4.inOut",
 			})
 			.to(
