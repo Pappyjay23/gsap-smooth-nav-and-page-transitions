@@ -169,7 +169,7 @@ const Navbar = () => {
 			{/* Menu Overlay */}
 			<div
 				id='menu-overlay'
-				className={`menu-overlay fixed top-0 left-0 w-full h-screen bg-[#c5fb45] z-20 text-black p-4 translate-y-[-100%]`}>
+				className={`menu-overlay fixed top-0 left-0 w-full h-dvh bg-[#c5fb45] z-20 text-black p-4 translate-y-[-100%]`}>
 				<div className='flex justify-between items-center'>
 					<p>Menu</p>
 					<div className='text-4xl cursor-pointer' onClick={toggleMenu}>
